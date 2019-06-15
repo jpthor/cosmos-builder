@@ -1,0 +1,32 @@
+FORMAT: 1A
+
+# Cosmos Builder
+
+Cosmos Builder makes it easy and quick to get a working "hello world" blockchain using the [cosmos SDK](https://github.com/cosmos/cosmos-sdk)
+
+# Auth
+
+## Auth Collection [/auth/accounts]
+
+### Account info [GET]
+Get the sequence and account numbers
+
++ Response 200 (application/json)
+    {
+      "type": "auth/Account",
+      "value": {
+        "address": "cosmos1fwm0tf48edxgntv83ata3mxwluef9ufsc7az3q",
+        "coins": [
+          {
+            "denom": "nametoken",
+            "amount": "1000"
+          }
+        ],
+        "public_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AiM4wwy8w/Z5OXwtaGKRI95VDXEBrRBpoj4MMkMQP6MR"
+        },
+        "account_number": "0",
+        "sequence": "1"
+      }
+    }

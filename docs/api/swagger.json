@@ -1,0 +1,50 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Cosmos Builder",
+        "version": "",
+        "description": "Cosmos Builder makes it easy and quick to get a working \"hello world\" blockchain using the [cosmos SDK](https://github.com/cosmos/cosmos-sdk)\n\n# Auth\n\n"
+    },
+    "paths": {
+        "/auth/accounts": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "headers": {},
+                        "examples": {
+                            "application/json": {
+                                "type": "auth/Account",
+                                "value": {
+                                    "address": "cosmos1fwm0tf48edxgntv83ata3mxwluef9ufsc7az3q",
+                                    "coins": [
+                                        {
+                                            "denom": "nametoken",
+                                            "amount": "1000"
+                                        }
+                                    ],
+                                    "public_key": {
+                                        "type": "tendermint/PubKeySecp256k1",
+                                        "value": "AiM4wwy8w/Z5OXwtaGKRI95VDXEBrRBpoj4MMkMQP6MR"
+                                    },
+                                    "account_number": "0",
+                                    "sequence": "1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "summary": "Account info",
+                "description": "Get the sequence and account numbers\n\n",
+                "tags": [],
+                "parameters": [],
+                "produces": [
+                    "application/json"
+                ]
+            }
+        }
+    },
+    "definitions": {
+        "Auth Collection": {}
+    }
+}
