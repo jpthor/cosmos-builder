@@ -3,6 +3,8 @@
 appHome="$HOME/go/src/github.com"
 appPath=""
 repo="https://github.com/cosmos/sdk-application-tutorial.git"
+
+#TODO: build these through echo
 appName="cmb"
 AppName="Cmb"
 appService=""
@@ -113,25 +115,3 @@ while true; do
   break
 
 done
-
-
-# #nameservice
-# sed -i '' "s/nameservice/${appService}/g" ${appHome}/${appPath}/x/${appService}/alias.go
-# sed -i '' "s/nameservice/${appService}/g" ${appHome}/${appPath}/x/${appService}/handler.go
-# sed -i '' "s/nameservice/${appService}/g" ${appHome}/${appPath}/x/${appService}/keeper.go
-# sed -i '' "s/nameservice/${appService}/g" ${appHome}/${appPath}/x/${appService}/module.go
-# sed -i '' "s/nameservice/${appService}/g" ${appHome}/${appPath}/x/${appService}/querier.go
-#
-# sed -i '' "s/nameservice/${appService}/g" ${appHome}/${appPath}/x/${appService}/types/codec.go
-# sed -i '' "s/nameservice/${appService}/g" ${appHome}/${appPath}/x/${appService}/types/key.go
-# sed -i '' "s/nameservice/${appService}/g" ${appHome}/${appPath}/x/${appService}/types/msgs.go
-# sed -i '' "s/nameservice/${appService}/g" ${appHome}/${appPath}/x/${appService}/types/querier.go
-# sed -i '' "s/nameservice/${appService}/g" ${appHome}/${appPath}/x/${appService}/types/types.go
-#
-# sed -i '' "s/nameservice/${appService}/g" ${appHome}/${appPath}/x/${appService}/client/cli/query.go
-# sed -i '' "s/nameservice/${appService}/g" ${appHome}/${appPath}/x/${appService}/client/cli/tx.go
-#
-# sed -i '' "s/nameservice/${appService}/g" ${appHome}/${appPath}/x/${appService}/client/rest/rest.go
-#
-# sed -i '' "s/nameservice/${appService}/g" ${appHome}/${appPath}/cmd/nscli/main.go
-# sed -i '' "s/nameservice/${appService}/g" ${appHome}/${appPath}/cmd/nsd/main.go
