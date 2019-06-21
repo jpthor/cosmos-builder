@@ -107,9 +107,7 @@ while true; do
   rename ' CmName() ' ' Name() '
   echo "types updated"
 
-  rename 'cosmos/sdk-application-tutorial' 'jpthor/test'
-
-  echo "replace github.com/jpthor/test => ../test" >> ${appHome}/${appPath}/go.mod
+  rename 'cosmos/sdk-application-tutorial' ${appPathStub}/${appName}
   echo "makefile updated"
 
   break
