@@ -78,6 +78,7 @@ while true; do
   rm -r ${appHome}/${appPath}/x/nameservice
   rm -r ${appHome}/${appPath}/cmd/nscli
   rm -r ${appHome}/${appPath}/cmd/nsd
+  rm -r ${appHome}/${appPath}/tutorial
   echo "folders updated"
 
   rename nameservice $appService
